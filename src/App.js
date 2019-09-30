@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Result from "./components/Result";
+import Scanner from "./components/Scanner";
 
 function App() {
+  const [state, setState] = React.useState({
+    scanning: false,
+    results: []
+  })
+
+  const _scan = () => {
+    setState({scanning: !state.scanning, results: state.results})
+  }
+
+  const _onDetected = (result) => {
+    setState(
+      {
+        scanning: state.scanning,
+        results: state.results.concat([result])
+      }
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={_scan}>{state.scanning ? 'stop': 'start'}</button>
+      <ul className="results">
+        {state.results.map(result => {
+          return <Result key={result.codeResult.code} result={result}/>
+        })}
+      </ul>
+      {state.scanning && <Scanner onDetected={_onDetected}/>}
+    </>
   );
 }
 
