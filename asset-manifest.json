@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/book-barcode-reader/static/css/main.b100e6da.chunk.css",
+    "main.js": "/book-barcode-reader/static/js/main.5707b8cb.chunk.js",
+    "main.js.map": "/book-barcode-reader/static/js/main.5707b8cb.chunk.js.map",
+    "runtime-main.js": "/book-barcode-reader/static/js/runtime-main.2d837fa5.js",
+    "runtime-main.js.map": "/book-barcode-reader/static/js/runtime-main.2d837fa5.js.map",
+    "static/js/2.df6d562f.chunk.js": "/book-barcode-reader/static/js/2.df6d562f.chunk.js",
+    "static/js/2.df6d562f.chunk.js.map": "/book-barcode-reader/static/js/2.df6d562f.chunk.js.map",
+    "index.html": "/book-barcode-reader/index.html",
+    "precache-manifest.a9f0e5e7904e851f30230d4de1e1d1fc.js": "/book-barcode-reader/precache-manifest.a9f0e5e7904e851f30230d4de1e1d1fc.js",
+    "service-worker.js": "/book-barcode-reader/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/book-barcode-reader/static/css/main.b100e6da.chunk.css.map"
+  }
+}
